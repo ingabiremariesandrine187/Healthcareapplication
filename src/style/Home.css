@@ -1,0 +1,296 @@
+/* Home Section */
+.home-container {
+    /* margin-top: 80px;   */
+    /* padding: 50px 10%; */
+    background-color: white;
+    justify-content: center; /* Center content */
+    margin:30px;
+}
+
+/* Flexbox for Text and Image */
+.home-content {
+    display: flex;
+    justify-content: space-between;  /* Title on left, image on right */
+    align-items: center;  /* Align vertically */
+    width: 100%;
+    max-width: 1200px;  /* Prevents extra wide layouts */
+}
+
+/* Title Styling */
+.home-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    flex: 1;  /* Allows title to take equal space */
+}
+
+/* Description Styling */
+.home-description {
+    font-size: 20px;
+    color: #555;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Right Side - Doctor Image */
+.doctor-image img{
+margin-right: 20px;
+margin-top:80px;
+}
+.doctor-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 columns per row */
+  gap: 20px; /* Adjust spacing between cards */
+  justify-content: center;
+  padding: 20px;
+}
+  
+.doctor-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+}
+  
+  .doctor-card img {
+    width: 100%; /* Make image take up full width of card */
+    height: 200px; /* Keep the image aspect ratio intact */
+    object-fit: cover; /* Cover the space without stretching the image */
+    border-bottom: 1px solid #eee; /* Optional: Add a border between image and content */
+    transition: transform 0.3s ease; 
+
+
+  }
+
+  .doctor-card img:hover {
+    transform: scale(0.1); 
+    transform: scale(1.1) translateY(-10px); 
+  }
+  
+  .doctor-content {
+    padding: 15px;
+  }
+  
+  h2 {
+    font-size: 1.1rem;
+    margin: 0;
+    
+  }
+  
+  .specialty,
+  .location,
+  .time,
+  .fee {
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+  
+  .view-profile{
+    padding: 8px 12px;
+    height:40px;
+    width:90px;
+    margin-top: 10px;
+    background-color: black;
+    color: rgb(166, 166, 166);
+    
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+  }
+  
+  button:hover {
+    background-color: rgb(81, 79, 79);
+  }
+  .find-doctors{
+    color:#007bff;
+    border: 1px solid #007bff;
+    width:90px;
+    height:20px;
+    border-radius: 10px;
+    margin-left:618px;
+    font-weight: 500;
+    background-color: rgb(221, 220, 220);
+    margin-top:40px;
+  }
+  .title h2{
+    margin-top:50px;
+    margin-bottom:70px;
+    font-size: 30px;
+    color:#333;
+  }
+  /* .categories{
+    display:flex;
+    gap:10px;
+  } */
+  .service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .service-card {
+    width: 180px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .icon-wrapper {
+    background: #eef2ff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    font-size: 30px;
+    color: #3b82f6;
+  }
+  
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  .about-doctors{
+    color:#007bff;
+    border: 1px solid #007bff;
+    width:95px;
+    height:32px;
+    border-radius: 10px;
+    margin-left:618px;
+    font-weight: 500;
+    background-color: rgb(221, 220, 220);
+    margin-top:40px;
+  }
+  .About-title h2{
+    margin-top:50px;
+    margin-bottom:70px;
+    font-size: 30px;
+    color:#333;
+  }
+
+   .about-description{
+    font-size: 20px;
+    color: #555;
+    margin-top: 10px;
+    font-weight: 500;
+    text-align: center;
+
+   }
+ button  {
+  border: 1px solid #666767;
+  background-color: #f3f0f0;
+  border-radius: 8px;
+    width:95px;
+    height:32px;
+    cursor: pointer;
+    color: #007bff;
+    text-align: center;
+ }
+ .about-section {
+  background: url('../assets/backgroundimage.jpg') no-repeat center center/cover;
+  background-size: cover; /* Ensure the image covers the section properly */
+  height: 100vh; /* Make it fill the entire viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content horizontally */
+  padding: 0 ; 
+  margin:0;/* Add padding to the left and right to give space around the content */
+  color: white;
+  position: relative;
+  margin-top: 60px;
+  left:0;
+  right:0;
+ 
+}
+
+.about-overlay {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between boxes */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text inside the boxes */
+  margin-right: 50px; /* Add some space from the right edge */
+}
+
+.about-box {
+  background: whitesmoke; /* Semi-transparent background */
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%; /* Make the box full width inside the overlay */
+  max-width: 350px; /* Maximum width for the boxes */
+}
+
+.about-box h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: black;
+}
+
+.about-box p {
+  font-size: 16px;
+  color:rgb(96, 94, 94);
+}
+.about-overlay :hover {
+background-color: #77a7f5;
+}
+.image14{
+  width: 50%;
+  height: 50%;
+}
+.question-title h3{
+  margin-left: 500px;
+  font-size: 30px;
+  color:#333;
+  
+}
+.description-in-touch{
+  margin-left: 320px;
+}
+.contact-button{
+  background-color: rgb(71, 71, 248); /* Blue background */
+  color: white; /* White text */
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 140px;
+  margin-left: 570px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}

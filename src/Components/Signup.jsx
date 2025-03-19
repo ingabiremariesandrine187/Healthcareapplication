@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image2 from '../assets/Healthcare_picture.png'
 import "../style/Signup.css";
 
 const Signup = () => {
@@ -54,6 +55,7 @@ const Signup = () => {
   return (
     <div className="signup-container">
       <h2>Sign Up</h2>
+         
       {successMessage && <p className="success-message">{successMessage}</p>}
       <form onSubmit={handleSubmit}>
         <div className="form-group">

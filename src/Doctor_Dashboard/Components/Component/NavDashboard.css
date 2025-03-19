@@ -1,0 +1,147 @@
+/* NavDashboard.css */
+.dash-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.dashboard-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a3353;
+  margin: 0;
+  margin-left: 300px;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-right: 80px;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon Styles */
+.icon {
+  font-size: 18px;
+  color: #1a3353;
+  cursor: pointer;
+}
+
+/* Search Box */
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 250px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 8px 15px;
+  padding-right: 35px;
+  border-radius: 20px;
+  border: none;
+  height: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.search-box input::placeholder {
+  color: #8e92a4;
+}
+
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8e92a4;
+  font-size: 16px;
+}
+
+.hamburger-menu {
+  margin-left: 1px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .search-box {
+      width: 200px;
+  }
+
+  .nav-icons {
+      gap: 15px;
+  }
+}
+
+.search-menu {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+/* Hover Effect */
+.dark-mode-toggle:hover {
+  color: #555;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+body.dark-mode .dash-navbar {
+  background: #333;
+  border-bottom: 1px solid #555;
+}
+
+body.dark-mode .icon {
+  color: #ffffff;
+}
+
+body.dark-mode .dark-mode-toggle {
+  color: #ffffff;
+}
+
+body.dark-mode .search-box {
+  background: #444;
+  border: 1px solid #777;
+}
+
+body.dark-mode .search-box input {
+  color: #ffffff;
+  background: transparent;
+}
+
+body.dark-mode .search-box input::placeholder {
+  color: #aaa;
+}
+
+body.dark-mode .search-icon {
+  color: #aaa;
+}

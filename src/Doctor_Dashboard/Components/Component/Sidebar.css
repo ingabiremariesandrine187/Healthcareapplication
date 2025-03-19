@@ -1,0 +1,50 @@
+.sidebar {
+  width: 250px;
+  background: #f8f9fa;
+  padding: 20px;
+  position: fixed; /* Fix the sidebar position */
+  top: 0; /* Move it to the top */
+  left: 0;
+  height: 100vh; /* Make it full height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+  .profile {
+    text-align: center;
+  }
+  .dashboard-profile{
+    border-radius: 50%;
+    width:60px;
+    height:60px;
+  }
+  
+  .menu-dashboard {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Ensures vertical stacking */
+    gap:20px;
+    color: gray;
+}
+  .menu li {
+    margin: 10px 0;
+    width: 100%; /* Makes sure list items take full width */
+}
+  
+  .menu-dashboard li a {
+    display: block; /* Makes the links fill the list item */
+    width: 100%; /* Ensures links stretch fully */
+    padding: 10px;
+    text-align: center; /* Centers text inside links */
+   /* Optional: Gives a button-like appearance */
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.3s ease;
+    font-size: 20px;
+}
+.menu-dashboard li a :hover{
+  color:gray;
+}

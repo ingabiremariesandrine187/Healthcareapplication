@@ -24,7 +24,7 @@ const SingleDoctorPage = () => {
             <p>
               {doctor.name} is an experienced {doctor.specialty} dedicated to providing high-quality care.
             </p>
-            <button className="appointment-button">Make Appointment</button>
+            
             <p className="terms">T&C apply. Please read Terms and Conditions.</p>
           </div>
         </div>

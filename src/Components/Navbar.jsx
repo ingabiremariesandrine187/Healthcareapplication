@@ -16,17 +16,17 @@ function Navbar() {
         <div class="logo-links">
         <nav className="menu">
           <Link to="/">Home</Link>
-          <Link to="/pharmacy">Pharmacy</Link>
-          <Link to="/about-us">FAQS</Link>
+          <Link to="/about us">About us</Link>
+          <Link to="/faqs">FAQS</Link>
           <Link to="/blogs">Blogs</Link>
-          <Link to="/contact-us">Contact Us</Link>
+          <Link to="/signup">Join us</Link>
         </nav>
 
         </div>
         
         <div className="icons">
           <div className="icon-btn">
-          <IoSearchOutline class="search-icon"/>
+          <IoSearchOutline class="search-home"/>
           </div>
           <div className="icon-btn">
           <IoSettingsOutline class="settings-icon" />

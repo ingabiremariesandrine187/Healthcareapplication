@@ -7,6 +7,13 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
+    margin-top:200px;
+  }
+  .signup-logo{
+    border-radius:50%;
+    width:20px;
+    height: 20px;
+    margin-top:10px;
   }
   
   h2 {

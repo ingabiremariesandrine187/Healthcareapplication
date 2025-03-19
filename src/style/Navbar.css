@@ -1,5 +1,3 @@
-
-
 .navbar {
   display: flex;
   align-items: center;
@@ -8,30 +6,29 @@
   padding-right: 4rem;
   position: fixed;
   background-color: white;
-  z-index:1000;
+  z-index: 1000;
   width: 91%;
   margin: 0;
-  top:0;
+  top: 0;
 }
-.logo-links{
+
+.logo-links {
   display: flex;
-  gap:5px;
+  gap: 5px;
   align-items: center;
-  
 }
+
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
-  
 }
+
 .logo img {
-width: 5rem;
-height: 5rem;
-object-fit: cover;
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
 }
-
-
 
 /* Navigation Links */
 .menu {
@@ -57,7 +54,6 @@ object-fit: cover;
   display: flex;
   gap: 15px;
   align-items: center;
-
 }
 
 .icon-btn {
@@ -68,6 +64,11 @@ object-fit: cover;
   border-radius: 50%;
   cursor: pointer;
   font-size: 14px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon-btn:hover {
+  transform: scale(1.1);
 }
 
 .user-profile {
@@ -76,11 +77,11 @@ object-fit: cover;
   border-radius: 50%;
   border: 2px solid white;
 }
-.Notification-icon{
+
+.Notification-icon {
   width: 23px;
   height: 22px;
   border-radius: 50%;
-  
 }
 
 .img1 {
@@ -91,13 +92,123 @@ object-fit: cover;
   object-fit: cover;
   cursor: pointer;
 }
-.user-icon{
+
+.user-icon,
+.settings-icon,
+.search-home {
   font-size: 19px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.user-icon:hover,
+.settings-icon:hover,
+.search-home:hover {
+  color: gray;
+  transform: scale(1.2);
+}
+
+/* ========== RESPONSIVENESS ========== */
+
+/* For medium screens (Tablets & Small Laptops) */
+@media (max-width: 1024px) {
+  .navbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+  }
   
+  .menu {
+    gap: 40px;
+    font-size: 18px;
+  }
+
+  .icons {
+    gap: 10px;
+  }
+
+  .icon-btn {
+    padding: 8px;
+    font-size: 12px;
+  }
+  
+  .user-icon,
+  .settings-icon,
+  .search-home {
+    font-size: 17px;
+  }
 }
-.settings-icon{
-  font-size: 19px;
+
+/* For small screens (Mobile Phones) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .logo-links {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .icons {
+    gap: 5px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .icon-btn {
+    padding: 8px;
+    font-size: 10px;
+  }
+
+  .img1 {
+    width: 30px;
+    height: 30px;
+  }
+
+  .user-icon,
+  .settings-icon,
+  .search-home {
+    font-size: 16px;
+  }
 }
-.search-icon{
-  font-size: 19px;
+
+/* For very small screens (extra small phones) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 5px;
+  }
+
+  .logo img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .menu {
+    font-size: 14px;
+  }
+
+  .icons {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .user-icon,
+  .settings-icon,
+  .search-home {
+    font-size: 14px;
+  }
 }

@@ -1,0 +1,71 @@
+.appointment-calendar {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  color: #0B3779;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.month-year {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+th {
+  font-weight: bold;
+}
+
+.highlight {
+  color: #0B3779;
+  font-weight: bold;
+}
+
+.appointments {
+  margin-top: 10px;
+}
+
+.appointment {
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.first { background: #dbe1fa; } /* Light blue */
+.second { background: #e2f2f2; } /* Light greenish blue */
+.third { background: #dbe1fa; } /* Light blue */
+.fourth { background: #e2f2f2; } /* Light greenish blue */
+.fifth { background: #dbe1fa; } /* Light blue */
+
+.appointment strong {
+  font-size: 14px;
+  display: block;
+  font-weight: bold;
+}
+
+.appointment p {
+  font-size: 12px;
+  margin: 2px 0;
+}

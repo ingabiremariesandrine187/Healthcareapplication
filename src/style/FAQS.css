@@ -1,0 +1,91 @@
+/* FAQ Container Styling */
+.container{
+    display: flex;
+    gap:100px;
+}
+
+.doctor-two{
+    margin-top: 150px;
+}
+.faq-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top:150px;
+    
+
+  }
+  
+  /* Heading Styling */
+  h2 {
+    color: #222;
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+  
+  /* FAQ List Styling */
+  .faq-list {
+    text-align: left;
+  }
+  
+  /* Individual FAQ Item */
+  .faq-item {
+    background: #f8f9fa;
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+  }
+  
+  .faq-item:hover {
+    background: #eef2ff;
+    border-color: #007bff;
+  }
+  
+  /* FAQ Question Button */
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: #007bff;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  .faq-question:hover {
+    color: #0056b3;
+  }
+  
+  .faq-question span {
+    font-size: 22px;
+    transition: transform 0.3s;
+  }
+  
+  .faq-question[aria-expanded="true"] span {
+    transform: rotate(180deg);
+  }
+  
+  /* FAQ Answer Styling */
+  .faq-answer {
+    margin-top: 8px;
+    padding: 10px;
+    color: #555;
+    font-size: 16px;
+    background: #ffffff;
+    border-left: 3px solid #007bff;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  

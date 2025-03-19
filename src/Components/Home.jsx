@@ -279,8 +279,8 @@ const Home = () =>{
        When your family needs prompt attention, expert treatment , 
        or a reliable consultation, our doctors are here to help
        </div>
-       <button className="contact-button">
-      <FaPhoneAlt className="contact-icon" /> Contact Us
+       <button className="admin-button" onClick={() => navigate("/admin-login")}>
+      Admin Dashboard
     </button>
        </div>
       

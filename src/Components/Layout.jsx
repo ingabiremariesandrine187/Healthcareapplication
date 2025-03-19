@@ -1,13 +1,15 @@
 import React from 'react'
 import {Outlet} from 'react-router-dom'
 import Navbar from '../Components/Navbar'
-import Footer from './footer' 
+import Footer from './footer'
+
 
 function Layout() {
     return(
         <div>
    <Navbar/>
    <Outlet/>
+
    <Footer/>
         </div>
     )

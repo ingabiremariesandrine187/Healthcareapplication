@@ -279,7 +279,7 @@ background-color: #77a7f5;
 .description-in-touch{
   margin-left: 320px;
 }
-.contact-button{
+.admin-button{
   background-color: rgb(71, 71, 248); /* Blue background */
   color: white; /* White text */
   font-size: 16px;
@@ -293,4 +293,101 @@ background-color: #77a7f5;
   margin-left: 570px;
   margin-top: 30px;
   margin-bottom: 40px;
+  width:150px;
+  height:50px;
+}
+
+
+
+/* Responsive Styles */
+
+/* Medium screens (Tablets & small laptops) */
+@media (max-width: 1024px) {
+  .home-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .doctor-container {
+      grid-template-columns: repeat(3, 1fr); /* Adjust grid for tablets */
+  }
+
+  .find-doctors,
+  .about-doctors {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+  }
+
+  .about-section {
+      height: auto;
+      padding: 50px 20px;
+      text-align: center;
+  }
+
+  .about-overlay {
+      gap: 15px;
+  }
+}
+
+/* Small screens (Phones) */
+@media (max-width: 768px) {
+  .doctor-container {
+      grid-template-columns: repeat(2, 1fr); /* Adjust grid for mobile */
+  }
+
+  .doctor-image img {
+      width: 100%;
+      max-width: 300px;
+      margin-top: 40px;
+  }
+
+  .home-title {
+      font-size: 18px;
+  }
+
+  .home-description,
+  .about-description {
+      font-size: 16px;
+  }
+
+  .question-title h3,
+  .description-in-touch {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+  }
+
+  .contact-button {
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+/* Extra Small screens (small phones) */
+@media (max-width: 480px) {
+  .doctor-container {
+      grid-template-columns: repeat(1, 1fr); /* One column for very small screens */
+  }
+
+  .home-title {
+      font-size: 16px;
+  }
+
+  .home-description {
+      font-size: 14px;
+  }
+
+  .doctor-image img {
+      max-width: 250px;
+  }
+
+  .about-box {
+      max-width: 280px;
+  }
+
+  .question-title h3 {
+      font-size: 24px;
+  }
 }

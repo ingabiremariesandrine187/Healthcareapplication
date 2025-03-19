@@ -1,52 +1,90 @@
 import React, { useState, useEffect } from 'react';
+import { Modal, Button, Input, Skeleton } from 'antd';
 import '../Component/Appointmentdas.css';
 
 function Appointmentdash() {
-  // Sample data (replace with API data)
-  const [appointments, setAppointments] = useState([
-    {
-      _id: '1',
-      fullName: 'John Doe',
-      email: 'johndoe@example.com',
-      selectedDate: '2025-03-20',
-      selectedTime: '10:00 AM',
-      message: 'Looking forward to the consultation.'
-    },
-    {
-      _id: '2',
-      fullName: 'Jane Smith',
-      email: 'janesmith@example.com',
-      selectedDate: '2025-03-21',
-      selectedTime: '11:30 AM',
-      message: 'Need advice on a health issue.'
-    },
-    {
-      _id: '3',
-      fullName: 'Michael Johnson',
-      email: 'michaelj@example.com',
-      selectedDate: '2025-03-22',
-      selectedTime: '2:00 PM',
-      message: 'Follow-up consultation.'
-    }
-  ]);
+  const [appointments, setAppointments] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [editAppointment, setEditAppointment] = useState(null);
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    appointmentDate: '',
+    appointmentTime: '',
+    message: ''
+  });
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [forceRender, setForceRender] = useState(false); // Used to force re-render
 
   useEffect(() => {
-    // Fetch appointments from the backend API
-    // fetch('http://localhost:5000/appointments') // Update with actual API
-    //   .then(response => response.json())
-    //   .then(data => setAppointments(data))
-    //   .catch(error => console.error('Error fetching data:', error));
-  }, []);
+    fetchAppointments();
+  }, [forceRender]); // Fetch appointments whenever forceRender changes
+
+  const fetchAppointments = () => {
+    setLoading(true);
+    fetch('http://localhost:5001/api/appointments/getAppointments')
+      .then(response => response.json())
+      .then(data => {
+        setAppointments(data);
+        setLoading(false);
+      })
+      .catch(error => {
+        console.error('Error fetching appointments:', error);
+        setLoading(false);
+      });
+  };
 
   const handleDelete = (id) => {
     if (window.confirm('Are you sure you want to delete this appointment?')) {
-      // Simulate delete
-      setAppointments(appointments.filter(app => app._id !== id));
+      fetch(`http://localhost:5001/api/appointments/deleteAppointment/${id}`, {
+        method: 'DELETE',
+      })
+        .then(response => {
+          if (response.ok) {
+            setAppointments(appointments.filter(app => app._id !== id));
+          } else {
+            console.error('Failed to delete appointment');
+          }
+        })
+        .catch(error => console.error('Error deleting appointment:', error));
     }
   };
 
   const handleUpdate = (id) => {
-    alert(`Update functionality for ID: ${id} to be implemented`);
+    const appointmentToEdit = appointments.find(app => app._id === id);
+    setEditAppointment(id);
+    setFormData({ ...appointmentToEdit });
+    setIsModalVisible(true);
+  };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = () => {
+    setLoading(true);
+    fetch(`http://localhost:5001/api/appointments/updateAppointment/${editAppointment}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData)
+    })
+      .then(response => response.json())
+      .then(updatedAppointment => {
+        setAppointments(prevAppointments => 
+          prevAppointments.map(app => 
+            app._id === editAppointment ? updatedAppointment : app
+          )
+        );
+        setEditAppointment(null);
+        setIsModalVisible(false);
+        setFormData({ fullName: '', email: '', appointmentDate: '', appointmentTime: '', message: '' });
+        setLoading(false);
+        setForceRender(!forceRender);  // Toggle forceRender to force re-render
+      })
+      .catch(error => {
+        console.error('Error updating appointment:', error);
+        setLoading(false);
+      });
   };
 
   return (
@@ -64,13 +102,19 @@ function Appointmentdash() {
           </tr>
         </thead>
         <tbody>
-          {appointments.length > 0 ? (
+          {loading ? (
+            Array.from({ length: 5 }).map((_, index) => (
+              <tr key={index}>
+                <td colSpan="6"><Skeleton active /></td>
+              </tr>
+            ))
+          ) : appointments.length > 0 ? (
             appointments.map((app) => (
               <tr key={app._id}>
                 <td>{app.fullName}</td>
                 <td>{app.email}</td>
-                <td>{app.selectedDate}</td>
-                <td>{app.selectedTime}</td>
+                <td>{new Date(app.appointmentDate).toLocaleDateString()}</td>
+                <td>{app.appointmentTime}</td>
                 <td>{app.message}</td>
                 <td>
                   <button className="update-btn" onClick={() => handleUpdate(app._id)}>Update</button>
@@ -85,6 +129,14 @@ function Appointmentdash() {
           )}
         </tbody>
       </table>
+
+      <Modal title="Edit Appointment" visible={isModalVisible} onOk={handleSubmit} onCancel={() => setIsModalVisible(false)}>
+        <Input type="text" name="fullName" value={formData.fullName} onChange={handleChange} placeholder="Full Name" required />
+        <Input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email" required />
+        <Input type="date" name="appointmentDate" value={formData.appointmentDate} onChange={handleChange} required />
+        <Input type="time" name="appointmentTime" value={formData.appointmentTime} onChange={handleChange} required />
+        <Input.TextArea name="message" value={formData.message} onChange={handleChange} placeholder="Message" required />
+      </Modal>
     </div>
   );
 }

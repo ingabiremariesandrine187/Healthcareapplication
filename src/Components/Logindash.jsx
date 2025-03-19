@@ -15,7 +15,7 @@ const Logindash = () => {
   };
 
   return (
-    <div className="login-container">
+    <div className="logindash-container">
       <form className="login-form" onSubmit={handleLogin}>
         <h2>Admin Login</h2>
         <div className="input-group">

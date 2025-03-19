@@ -12,8 +12,10 @@ import Login from './Components/Login'
 import Signup from './Components/Signup'
 import Dashboard from './Doctor_Dashboard/Components/Component/Dashboard'
 import Appointmentdash from './Doctor_Dashboard/Components/Component/Appointmentdash'
+import Settings from './Doctor_Dashboard/Components/Component/Setting'
 import DashLayout from './Doctor_Dashboard/Components/Component/Layout'
 import Logindash from './Components/Logindash'
+import SingleBlog from './Components/SIngleblog'
 
 function App() {
  
@@ -29,6 +31,7 @@ function App() {
       <Route path="/about us" element={<About/>} /> 
       <Route path="/faqs" element={<FAQS />} /> 
       <Route path="/blogs" element={<Blogs />} /> 
+      <Route path="/blog/:id" element={<SingleBlog />} />
 
       <Route path="/doctor/:id" element={<SingleDoctorPage />} />  
       <Route path="/appointment/:id" element={<Appointment />} /> 
@@ -43,6 +46,7 @@ function App() {
      <Route path="/admin-login" element={<Logindash />} />
      <Route path='/Dashboard' index element={<Dashboard/>}/>
      <Route path="/appointments" element={<Appointmentdash />} />
+     <Route path="/settings" element={<Settings />} />
      
      </Route>
       </Routes>

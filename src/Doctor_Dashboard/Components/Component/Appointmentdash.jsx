@@ -119,6 +119,7 @@ function Appointmentdash() {
                 <td>
                   <button className="update-btn" onClick={() => handleUpdate(app._id)}>Update</button>
                   <button className="delete-btn" onClick={() => handleDelete(app._id)}>Delete</button>
+                  <button className="confirm-btn" onClick={() => handleConfirm(app._id)}>Confirm</button>
                 </td>
               </tr>
             ))

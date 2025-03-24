@@ -3,7 +3,7 @@
     max-width: 100%;
     padding: 20px;
     background-color: #f5f7ff;
-    margin-left: 500px;
+    margin-left: 300px;
   }
   
   /* Summary Cards */
@@ -41,6 +41,7 @@
   
   .card-content {
     flex: 1;
+    
   }
   
   .card-title {

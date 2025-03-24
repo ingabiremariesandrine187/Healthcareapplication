@@ -31,10 +31,10 @@ const About = () => {
 
           <h3>Why Choose Us?</h3>
           <div className="benefits">
-            <div className="benefit-item">✅ Convenience: Book, reschedule, or cancel appointments anytime.</div>
-            <div className="benefit-item">✅ Verified Specialists: We connect you only with trusted and qualified doctors.</div>
-            <div className="benefit-item">✅ User-Friendly Interface: A simple and intuitive design.</div>
-            <div className="benefit-item">✅ 24/7 Availability: Get healthcare support whenever you need it.</div>
+            <div className="benefit-item"> Convenience: Book, reschedule, or cancel appointments anytime.</div>
+            <div className="benefit-item"> Verified Specialists: We connect you only with trusted and qualified doctors.</div>
+            <div className="benefit-item">User-Friendly Interface: A simple and intuitive design.</div>
+            <div className="benefit-item"> 24/7 Availability: Get healthcare support whenever you need it.</div>
           </div>
 
           <h3>Join Us in Revolutionizing Healthcare</h3>
@@ -44,7 +44,7 @@ const About = () => {
             our platform is designed to offer you the best possible healthcare experience.
           </p>
 
-          <button className="start-btn">Start Booking Your Appointment</button>
+         
         </div>
 
         {/* <div className="about-image">

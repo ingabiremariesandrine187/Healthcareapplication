@@ -23,6 +23,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    margin-top:130px;
 } 
 
 .about-text {
@@ -107,6 +108,45 @@ body {
 .start-btn:hover {
     background: #0056b3;
 }
+
+.about-pictures {
+    display: flex; /* Align the images in a row */
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Align the images vertically */
+    gap: 50px; /* Add space between the images */
+  }
+  
+  /* Styling for each image container */
+   /* .image2 {
+    width: 40%; /* Set the width of each image container to 40% */
+    /* text-align: center; /* Center the text inside the image container */
+  
+  .image1{
+    /* Set the width of each image container to 40% */
+    text-align: center;
+    
+  }
+  
+  /* Optional: If you want to make sure the images fit within the containers */
+  .img70 {
+    width: 50%; /* Make the images fill their container */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+.image71{
+    margin-right: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive Design */
 @media (max-width: 1200px) {

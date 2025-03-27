@@ -12,6 +12,7 @@ import Image10 from '../assets/images8.jpg'
 import Image11 from '../assets/doctor3.jpg'
 import Image12 from '../assets/doctor.jpg'
 import Image13 from '../assets/Doctor2.webp'
+import Image16 from '../assets/duty.jpg'
 import { FaUserMd, FaClinicMedical, FaVial, FaAmbulance, FaShieldAlt } from "react-icons/fa";
 import BackgroundImage from "../assets/backgroundimage.jpg";  
 import image14 from '../assets/avatar doctor.svg'
@@ -230,7 +231,7 @@ const Home = () =>{
           <div className="icon-wrapper">{service.icon}</div>
           <h3>{service.title}</h3>
           <p>Due to its wide spread use as filler text</p>
-          <a href="#">Find here →</a>
+          
         </div>
       ))}
     </div>
@@ -279,7 +280,7 @@ const Home = () =>{
         </div>
       </div>
       <div class="other-description">
-     <div> <img src={image14} alt="Doctor" class="image14"/></div>
+     <div> <img src={Image16} alt="Doctor" class="image16"/></div>
       {/* <div class="avatar-description">"Your health, our priority.
 Expert care with a compassionate touch.
 Here for you, every step of the way</div> */}

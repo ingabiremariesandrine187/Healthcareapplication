@@ -28,7 +28,7 @@ const Dashboard = () => {
           <div className="card-content">
             <h3 className="card-title">Today Patient</h3>
             <p className="card-value">068</p>
-            <p className="card-subtitle">21 Dec-2021</p>
+            <p className="card-subtitle">21 March-2025</p>
           </div>
         </div>
 
@@ -84,7 +84,7 @@ const Dashboard = () => {
               <BiSolidUserCircle  class="patient-icon"/>
               </div>
               <div className="patient-info">
-                <p className="patient-name">M.J. Mical</p>
+                <p className="patient-name">urujeni </p>
                 <p className="patient-diagnosis">Health Cheakup</p>
               </div>
               <div className="appointment-time on-going">On Going</div>
@@ -95,7 +95,7 @@ const Dashboard = () => {
               <BiSolidUserCircle  class="patient-icon"/>
               </div>
               <div className="patient-info">
-                <p className="patient-name">Sanath Deo</p>
+                <p className="patient-name">albine</p>
                 <p className="patient-diagnosis">Health Cheakup</p>
               </div>
               <div className="appointment-time">12 : 30 PM</div>
@@ -106,7 +106,7 @@ const Dashboard = () => {
               <BiSolidUserCircle  class="patient-icon"/>
               </div>
               <div className="patient-info">
-                <p className="patient-name">Loeara Phanj</p>
+                <p className="patient-name">sandrine</p>
                 <p className="patient-diagnosis">Report</p>
               </div>
               <div className="appointment-time">01 : 00 PM</div>
@@ -117,7 +117,7 @@ const Dashboard = () => {
               <BiSolidUserCircle  class="patient-icon"/>
               </div>
               <div className="patient-info">
-                <p className="patient-name">Komola Haris</p>
+                <p className="patient-name">Chris</p>
                 <p className="patient-diagnosis">Common Cold</p>
               </div>
               <div className="appointment-time">01 : 30 PM</div>
@@ -284,9 +284,9 @@ const Dashboard = () => {
 
         {/* Calendar */}
         <div className="calendar-section">
-          <h3 className="section-title">Calander</h3>
+          <h3 className="section-title">Calender</h3>
           <div className="calendar-header">
-            <span className="calendar-title">December - 2021</span>
+            <span className="calendar-title">March - 2025</span>
           </div>
           <div className="calendar-grid">
             <div className="calendar-days">

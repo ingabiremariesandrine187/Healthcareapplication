@@ -1,10 +1,13 @@
 import React from "react";
+import image70 from '../assets/meeting2.jpeg'
+import image71 from '../assets/meeting4.webp'
 import '../style/About.css'
 // import aboutImage from "../assets/aboutus.jpg"; // Add an appropriate image to assets
 
 const About = () => {
   return (
     <div className="about-container">
+       <div class="image1"> <img src={image70} alt="Doctor" className="img70" /></div>
       <div className="about-content">
         <div className="about-text">
           <h2>Empowering Healthcare Through Technology</h2>
@@ -51,6 +54,10 @@ const About = () => {
           <img src={aboutImage} alt="About Us" />
         </div> */}
       </div>
+
+        
+         
+          <div class="image2"> <img src={image71} alt="Doctor" className="img71" /></div>
     </div>
   );
 };

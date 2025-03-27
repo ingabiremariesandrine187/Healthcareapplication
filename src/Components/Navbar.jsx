@@ -30,7 +30,7 @@ function Navbar() {
           <Link to="/pharmacy">Pharmacy</Link>
           <Link to="/faqs">FAQS</Link>
           <Link to="/blogs">Blogs</Link>
-          <Link to="/about-us">About us</Link>
+          <Link to="/about us">About us</Link>
           <Link to="/login">admin</Link>
         </nav>
       </div>

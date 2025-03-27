@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Component/Dashboard.css'
+import { BiSolidUserCircle } from "react-icons/bi";
 import { FaEnvelope, FaBell, FaSearch, FaBars, FaUser, FaCalendarAlt, FaUserMd, FaCheck, FaTimes, FaComments, FaPhone, FaFileAlt } from 'react-icons/fa';
 
 const Dashboard = () => {
@@ -36,9 +37,9 @@ const Dashboard = () => {
             <FaCalendarAlt className="summary-icon" />
           </div>
           <div className="card-content">
-            <h3 className="card-title">Today Appintments</h3>
+            <h3 className="card-title">Today Appointments</h3>
             <p className="card-value">085</p>
-            <p className="card-subtitle">21 Dec-2021</p>
+            <p className="card-subtitle">28 March-2025</p>
           </div>
         </div>
       </div>
@@ -47,7 +48,7 @@ const Dashboard = () => {
       <div className="dashboard-content">
         {/* Left Section - Chart */}
         <div className="chart-section">
-          <h3 className="section-title">Patients Summaey December 2021</h3>
+          <h3 className="section-title">Patients Summary March 2025</h3>
           <div className="donut-chart">
             {/* This is where you'd implement the donut chart */}
             <div className="chart-placeholder"></div>
@@ -80,7 +81,7 @@ const Dashboard = () => {
           <div className="appointment-list">
             <div className="appointment-item">
               <div className="patient-avatar">
-                <img src="/placeholder-avatar-1.jpg" alt="Patient" />
+              <BiSolidUserCircle  class="patient-icon"/>
               </div>
               <div className="patient-info">
                 <p className="patient-name">M.J. Mical</p>
@@ -91,7 +92,7 @@ const Dashboard = () => {
 
             <div className="appointment-item">
               <div className="patient-avatar">
-                <img src="/placeholder-avatar-2.jpg" alt="Patient" />
+              <BiSolidUserCircle  class="patient-icon"/>
               </div>
               <div className="patient-info">
                 <p className="patient-name">Sanath Deo</p>
@@ -102,7 +103,7 @@ const Dashboard = () => {
 
             <div className="appointment-item">
               <div className="patient-avatar">
-                <img src="/placeholder-avatar-3.jpg" alt="Patient" />
+              <BiSolidUserCircle  class="patient-icon"/>
               </div>
               <div className="patient-info">
                 <p className="patient-name">Loeara Phanj</p>
@@ -113,7 +114,7 @@ const Dashboard = () => {
 
             <div className="appointment-item">
               <div className="patient-avatar">
-                <img src="/placeholder-avatar-4.jpg" alt="Patient" />
+              <BiSolidUserCircle  class="patient-icon"/>
               </div>
               <div className="patient-info">
                 <p className="patient-name">Komola Haris</p>
@@ -122,9 +123,7 @@ const Dashboard = () => {
               <div className="appointment-time">01 : 30 PM</div>
             </div>
 
-            <div className="see-all">
-              <a href="#">See All</a>
-            </div>
+            
           </div>
         </div>
 
@@ -133,7 +132,7 @@ const Dashboard = () => {
           <h3 className="section-title">Next Patient Details</h3>
           <div className="patient-profile">
             <div className="patient-avatar-large">
-              <img src="/placeholder-avatar-2.jpg" alt="Patient" />
+            <BiSolidUserCircle  class="patients-icon"/>
             </div>
             <div className="patient-name-id">
               <h4>Sanath Deo</h4>
@@ -239,7 +238,7 @@ const Dashboard = () => {
           <div className="request-list">
             <div className="request-item">
               <div className="patient-avatar">
-                <img src="/placeholder-avatar-5.jpg" alt="Patient" />
+              <BiSolidUserCircle  class="patient-icon"/>
               </div>
               <div className="patient-info">
                 <p className="patient-name">Maria Sarafat</p>
@@ -259,7 +258,7 @@ const Dashboard = () => {
             </div>
             <div className="request-item">
               <div className="patient-avatar">
-                <img src="/placeholder-avatar-6.jpg" alt="Patient" />
+              <BiSolidUserCircle  class="patient-icon"/>
               </div>
               <div className="patient-info">
                 <p className="patient-name">Jhon Deo</p>
@@ -277,9 +276,9 @@ const Dashboard = () => {
                 </button>
               </div>
             </div>
-            <div className="see-all">
+            {/* <div className="see-all">
               <a href="#">See All</a>
-            </div>
+            </div> */}
           </div>
         </div>
 

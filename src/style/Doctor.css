@@ -1,0 +1,67 @@
+
+
+
+
+.doctor-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns per row */
+    gap: 20px; /* Adjust spacing between cards */
+    justify-content: center;
+    padding: 20px;
+    margin-top: 100px;
+  }
+
+
+ 
+  .doctor-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+  }
+    
+    .doctor-card img {
+      width: 100%; /* Make image take up full width of card */
+      height: 200px; /* Keep the image aspect ratio intact */
+      object-fit: cover; /* Cover the space without stretching the image */
+      border-bottom: 1px solid #eee; /* Optional: Add a border between image and content */
+      transition: transform 0.3s ease; 
+  
+  
+    }
+  
+    .doctor-card img:hover {
+      transform: scale(0.1); 
+      transform: scale(1.1) translateY(-10px); 
+    }
+    
+    .doctor-content {
+      padding: 15px;
+    }
+    
+    h2 {
+      font-size: 1.1rem;
+      margin: 0;
+      
+    }
+
+
+
+
+
+
+.view-profile{
+    padding: 8px 12px;
+    height:40px;
+    width:90px;
+    margin-top: 10px;
+    background-color: black;
+    color: rgb(166, 166, 166);
+    
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+  }

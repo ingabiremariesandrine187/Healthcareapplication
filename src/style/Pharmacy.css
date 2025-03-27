@@ -1,0 +1,46 @@
+.pharmacy-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .pharmacy-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .pharmacy-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* More spacing between items */
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .pharmacy-item {
+    text-align: center;
+    background: #ffffff; /* Optional: White background for cards */
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners for the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    width: 90%; /* Ensure it fills the grid column */
+  }
+  
+  .pharmacy-item img {
+    width: 100%; /* Make sure image takes full width of its container */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures images are well-cropped and fit nicely */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .pharmacy-item img:hover {
+    transform: scale(1.1);
+  }
+  
+  .pharmacy-name {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  

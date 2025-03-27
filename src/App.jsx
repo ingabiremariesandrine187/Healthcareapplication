@@ -13,9 +13,12 @@ import Signup from './Components/Signup'
 import Dashboard from './Doctor_Dashboard/Components/Component/Dashboard'
 import Appointmentdash from './Doctor_Dashboard/Components/Component/Appointmentdash'
 import Settings from './Doctor_Dashboard/Components/Component/Setting'
+import Profile from './Doctor_Dashboard/Components/Component/Profile'
 import DashLayout from './Doctor_Dashboard/Components/Component/Layout'
 import Logindash from './Components/Logindash'
 import SingleBlog from './Components/SIngleblog'
+import Pharmacy from './Components/Pharmacy'
+import Doctor from './Components/Doctor'
 
 function App() {
  
@@ -31,10 +34,13 @@ function App() {
       <Route path="/about us" element={<About/>} /> 
       <Route path="/faqs" element={<FAQS />} /> 
       <Route path="/blogs" element={<Blogs />} /> 
+      <Route path="/pharmacy" element={<Pharmacy/>} />
       <Route path="/blog/:id" element={<SingleBlog />} />
-
+      <Route path="/doctor" element={<Doctor />} />
       <Route path="/doctor/:id" element={<SingleDoctorPage />} />  
+      <Route path="/single-doctor/:id" element={<SingleDoctorPage />} />
       <Route path="/appointment/:id" element={<Appointment />} /> 
+      <Route path="/profile/" element={<Profile/>} />
       <Route path='/'  element={<Signup/>}/>
       <Route path='/'  element={<Login/>}/>
       

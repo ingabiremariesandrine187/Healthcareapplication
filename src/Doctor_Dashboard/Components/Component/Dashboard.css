@@ -190,7 +190,7 @@
     height: 45px;
     border-radius: 50%;
     overflow: hidden;
-    background-color: #f0f0f0;
+    background-color: white;
   }
   
   .patient-avatar img {
@@ -263,7 +263,11 @@
     border-radius: 50%;
     overflow: hidden;
     margin-right: 15px;
-    background-color: #f0f0f0;
+    background-color: white;
+  }
+  .patients-icon{
+    font-size:65px;
+    color:gray;
   }
   
   .patient-name-id {
@@ -581,6 +585,20 @@
   .calendar-dates .next-month {
     color: #ccc;
   }
+
+  /* .user-iicons{
+    font-size: 30px;
+    color:black;
+  } */
+
+.patient-icon{
+  font-size: 45px;
+  background-color:white ;
+color:gray;
+}
+
+
+
   
   /* Responsive Adjustments */
   @media (max-width: 1200px) {

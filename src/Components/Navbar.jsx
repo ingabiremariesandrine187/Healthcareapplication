@@ -1,43 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoSettingsOutline } from "react-icons/io5";
 import { IoSearchOutline } from "react-icons/io5";
-import Image2 from '../assets/Healthcare_picture.png'
-import "../style/Navbar.css"; 
 import { FaRegCircleUser } from "react-icons/fa6";
+import Image2 from '../assets/Healthcare_picture.png';
+import "../style/Navbar.css";
+
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    
-      <div className="navbar">
-        
-        <div className="logo">
-        <div><img src={Image2} alt='Image2' ></img></div> 
+    <div className="navbar">
+      <div className="logo">
+        <div><img src={Image2} alt='Healthcare Logo'></img></div> 
+      </div>
+      <div className="logo-links">
+        {/* Menu Icon for small screens */}
+        <div className="menu-icon" onClick={toggleMenu}>
+          <span className="menu-toggle">☰</span> {/* You can use a hamburger icon here */}
         </div>
-        <div class="logo-links">
-        <nav className="menu">
+
+        {/* Navigation Links */}
+        <nav className={`menu ${menuOpen ? 'open' : ''}`}>
           <Link to="/">Home</Link>
-          <Link to="/about us">About us</Link>
+          <Link to="/pharmacy">Pharmacy</Link>
           <Link to="/faqs">FAQS</Link>
           <Link to="/blogs">Blogs</Link>
+          <Link to="/about-us">About us</Link>
           <Link to="/login">admin</Link>
         </nav>
-
-        </div>
-        
-        <div className="icons">
-          <div className="icon-btn">
-          <IoSearchOutline class="search-home"/>
-          </div>
-          <div className="icon-btn">
-          <IoSettingsOutline class="settings-icon" />
-          </div>
-          <div class="icon-btn">
-          <FaRegCircleUser  class="user-icon"/>
-          </div>
+      </div>
       
+      {/* Icons Section */}
+      <div className="icons">
+        <div className="icon-btn">
+          <IoSearchOutline className="search-home" />
+        </div>
+        <div className="icon-btn">
+          <IoSettingsOutline className="settings-icon" />
+        </div>
+        <div className="icon-btn">
+          <FaRegCircleUser className="user-icon" />
         </div>
       </div>
-
+    </div>
   );
 }
 

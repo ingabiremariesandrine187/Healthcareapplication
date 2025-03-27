@@ -58,27 +58,27 @@ const Appointments = () => {
       <h2>Book an Appointment with {doctor.name}</h2>
       <form onSubmit={handleSubmit}>
         <label>
-          Full Name:
+          Full Name
           <input type="text" name="fullName" value={formData.fullName} onChange={handleChange} required />
         </label>
 
         <label>
-          Email:
+          Email
           <input type="email" name="email" value={formData.email} onChange={handleChange} required />
         </label>
 
         <label>
-          Select Date:
+          Select Date
           <input type="date" name="appointmentDate" value={formData.appointmentDate} onChange={handleChange} required />
         </label>
 
         <label>
-          Select Time:
+          Select Time
           <input type="time" name="appointmentTime" value={formData.appointmentTime} onChange={handleChange} required />
         </label>
 
         <label>
-          Additional Message:
+          Additional Message
           <textarea name="message" value={formData.message} onChange={handleChange}></textarea>
         </label>
 

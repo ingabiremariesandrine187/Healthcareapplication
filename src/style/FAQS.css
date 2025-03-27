@@ -67,6 +67,7 @@
   
   .faq-question:hover {
     color: #0056b3;
+    background: none;
   }
   
   .faq-question span {

@@ -36,8 +36,10 @@
   gap: 80px;
   font-size: 20px;
   font-weight: 300;
+  transition: all 0.3s ease-in-out;
 }
 
+/* Initially hide the menu links on small screens */
 .menu a {
   text-decoration: none;
   color: black;
@@ -47,6 +49,13 @@
 
 .menu a:hover {
   color: gray;
+}
+
+/* Menu Icon (hamburger) for small screens */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
 }
 
 /* Icons Section */
@@ -137,6 +146,24 @@
   .search-home {
     font-size: 17px;
   }
+
+  /* Show menu icon on medium screens */
+  .menu-icon {
+    display: block;
+  }
+
+  /* Hide menu links by default on small screens */
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+    align-items: center;
+  }
+
+  .menu.open {
+    display: flex;
+  }
 }
 
 /* For small screens (Mobile Phones) */
@@ -151,14 +178,6 @@
   .logo-links {
     justify-content: center;
     width: 100%;
-  }
-
-  .menu {
-    flex-direction: column;
-    gap: 15px;
-    font-size: 16px;
-    align-items: center;
-    margin-top: 10px;
   }
 
   .icons {

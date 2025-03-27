@@ -168,6 +168,8 @@ const Home = () =>{
   const handleDoctorProfile = (id) => {
     navigate(`/doctor/${id}`);
   };
+  
+
 
 
   return (
@@ -177,7 +179,14 @@ const Home = () =>{
         <div className="home-title">
           <h1>Select Top Specialists</h1>
           <div class="home-description">When your family needs prompt attention, expert treatment
-            , or a reliable consultation, our doctors are here to help</div>
+            , or a reliable consultation, our doctors are here to help,
+            We understand the importance of quality healthcare and are committed to providing personalized care tailored to your needs.
+             Whether it's a routine check-up or an emergency, our team is dedicated to ensuring your well-being. 
+            Trust us to offer compassionate and efficient medical services that you and your family deserve
+            
+            
+  
+            </div>
         </div>
 
         {/* Right Side - Image */}
@@ -185,7 +194,7 @@ const Home = () =>{
           <img src={Image3} alt="Doctor" className="img3" />
         </div>
       </div>
-      <div class="find-doctors">Find Doctors</div>
+      <button class="find-doctors" onClick={() => navigate("/doctor")}>Find Doctors</button>
      <div class="title">
       <h2>Find your specialist</h2>
      </div>
@@ -225,7 +234,7 @@ const Home = () =>{
         </div>
       ))}
     </div>
-    <div class="about-doctors">about Doctors</div>
+    
     <div class="About-title"><h2>Good Services And Better
     Health By Our Specialists</h2></div>
     <div class="about-description">
@@ -237,7 +246,7 @@ const Home = () =>{
        With a focus on patient well-being, we combine experience, compassion,
      and innovation to deliver healthcare you can trust.
     </div>
-    <button class="about-read-more">Read-More</button>
+   
     <div className="about-section">
         <div className="about-overlay">
           <div className="about-box">
@@ -270,18 +279,13 @@ const Home = () =>{
         </div>
       </div>
       <div class="other-description">
-      <img src={image14} alt="Doctor" class="image14"/>
-        </div>
-       <div class="in-touch-section">
+     <div> <img src={image14} alt="Doctor" class="image14"/></div>
+      {/* <div class="avatar-description">"Your health, our priority.
+Expert care with a compassionate touch.
+Here for you, every step of the way</div> */}
 
-       <div class="question-title"><h3>Have question get in touch</h3></div>
-       <div class="description-in-touch">
-       When your family needs prompt attention, expert treatment , 
-       or a reliable consultation, our doctors are here to help
-       </div>
-       
-       </div>
-      
+
+        </div>
     </div>
   );
 }

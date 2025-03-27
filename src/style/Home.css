@@ -464,4 +464,98 @@ background-color: #77a7f5;
 }
 
 
+@media (max-width: 1200px) {
+  .doctor-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns per row */
+  }
+}
 
+/* For screens smaller than 900px */
+@media (max-width: 900px) {
+  .doctor-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+  }
+
+  .doctor-card img {
+    height: 180px; /* Adjust image size for smaller screens */
+  }
+
+  h2 {
+    font-size: 1rem; /* Adjust heading font size */
+  }
+
+  .specialty,
+  .location,
+  .time,
+  .fee {
+    font-size: 0.8rem; /* Adjust text size */
+  }
+
+  .view-profile {
+    width: 80px; /* Smaller button size */
+  }
+
+  .find-doctors {
+    font-size: 14px; /* Smaller font size */
+  }
+}
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+  .doctor-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
+  }
+
+  .doctor-card img {
+    height: 150px; /* Adjust image size for mobile */
+  }
+
+  h2 {
+    font-size: 0.9rem; /* Adjust heading font size */
+  }
+
+  .specialty,
+  .location,
+  .time,
+  .fee {
+    font-size: 0.7rem; /* Adjust text size */
+  }
+
+  .view-profile {
+    width: 70px; /* Adjust button size */
+  }
+
+  .find-doctors {
+    font-size: 13px; /* Adjust font size */
+  }
+}
+
+/* For very small screens (mobile portrait) */
+@media (max-width: 400px) {
+  .doctor-container {
+    grid-template-columns: 1fr; /* 1 column per row */
+  }
+
+  .doctor-card img {
+    height: 120px; /* Adjust image size for very small screens */
+  }
+
+  h2 {
+    font-size: 0.8rem; /* Adjust heading font size */
+  }
+
+  .specialty,
+  .location,
+  .time,
+  .fee {
+    font-size: 0.6rem; /* Adjust text size */
+  }
+
+  .view-profile {
+    width: 60px; /* Adjust button size */
+  }
+
+  .find-doctors {
+    font-size: 12px; /* Adjust font size */
+  }
+}

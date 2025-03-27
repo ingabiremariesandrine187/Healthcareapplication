@@ -16,7 +16,7 @@ const Dashboard = () => {
           </div>
           <div className="card-content">
             <h3 className="card-title">Total Patient</h3>
-            <p className="card-value">2000+</p>
+            <p className="card-value">....</p>
             <p className="card-subtitle">Till Today</p>
           </div>
         </div>
@@ -27,7 +27,7 @@ const Dashboard = () => {
           </div>
           <div className="card-content">
             <h3 className="card-title">Today Patient</h3>
-            <p className="card-value">068</p>
+            <p className="card-value">...</p>
             <p className="card-subtitle">21 March-2025</p>
           </div>
         </div>

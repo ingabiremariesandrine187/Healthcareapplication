@@ -138,17 +138,7 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-/* Responsive Design */
+/* Existing Responsive Design (Retained) */
 @media (max-width: 1200px) {
     .about-content {
         flex-direction: row;
@@ -182,3 +172,95 @@ body {
         width: 100%;
     }
 }
+
+/* Additional Responsiveness for Better Mobile View */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .about-text h2 {
+        font-size: 24px;
+    }
+
+    .about-text h3 {
+        font-size: 20px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    .benefit-item {
+        font-size: 14px;
+    }
+
+    .about-pictures {
+        flex-direction: column; /* Stack images vertically */
+        gap: 20px;
+    }
+
+    .img70 {
+        width: 80%; /* Adjust image size */
+    }
+
+    .image71 {
+        margin-right: 0;
+    }
+
+    .start-btn {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 480px) {
+    .about-container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .about-text h2 {
+        font-size: 20px;
+    }
+
+    .about-text h3 {
+        font-size: 18px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .benefit-item {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .img70 {
+        width: 100%;
+    }
+
+    .start-btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

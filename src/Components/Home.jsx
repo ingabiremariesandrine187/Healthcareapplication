@@ -255,7 +255,7 @@ const Home = () =>{
             <p>Our mission is to bridge the gap between patients and 
               healthcare professionals by offering a reliable,
                user-friendly system for booking medical appointments. We strive to enhance efficiency, 
-              reduce waiting times, and promote better patient-doctor interactions</p>
+              time efficiency, and promote better patient-doctor interactions</p>
           </div>
           <div className="about-box">
             <h3>Our Vision</h3>

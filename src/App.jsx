@@ -19,6 +19,7 @@ import Logindash from './Components/Logindash'
 import SingleBlog from './Components/SIngleblog'
 import Pharmacy from './Components/Pharmacy'
 import Doctor from './Components/Doctor'
+import  SinglePharmacyPage from './Components/SinglePharmacyPage'
 
 function App() {
  
@@ -37,7 +38,8 @@ function App() {
       <Route path="/pharmacy" element={<Pharmacy/>} />
       <Route path="/blog/:id" element={<SingleBlog />} />
       <Route path="/doctor" element={<Doctor />} />
-      <Route path="/doctor/:id" element={<SingleDoctorPage />} />  
+      <Route path="/doctor/:id" element={<SingleDoctorPage />} /> 
+      <Route path="/pharmacy/:id" element={<SinglePharmacyPage />} /> 
       <Route path="/single-doctor/:id" element={<SingleDoctorPage />} />
       <Route path="/appointment/:id" element={<Appointment />} /> 
       <Route path="/profile/" element={<Profile/>} />

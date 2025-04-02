@@ -19,8 +19,7 @@ import Logindash from './Components/Logindash'
 import SingleBlog from './Components/SIngleblog'
 import Pharmacy from './Components/Pharmacy'
 import Doctor from './Components/Doctor'
-import  SinglePharmacyPage from './Components/SinglePharmacyPage'
-
+// import  SinglePharmacyPage from './Components/SinglePharmacyPage'
 function App() {
  
   return (
@@ -29,7 +28,6 @@ function App() {
       <Routes>
       
       <Route path='/' element={<Layout/>}>
-      
       <Route path='/' element={<Home/>}/>
       <Route path='/Home' index element={<Home/>}/>
       <Route path="/about us" element={<About/>} /> 
@@ -39,15 +37,14 @@ function App() {
       <Route path="/blog/:id" element={<SingleBlog />} />
       <Route path="/doctor" element={<Doctor />} />
       <Route path="/doctor/:id" element={<SingleDoctorPage />} /> 
-      <Route path="/pharmacy/:id" element={<SinglePharmacyPage />} /> 
       <Route path="/single-doctor/:id" element={<SingleDoctorPage />} />
       <Route path="/appointment/:id" element={<Appointment />} /> 
       <Route path="/profile/" element={<Profile/>} />
       <Route path='/'  element={<Signup/>}/>
       <Route path='/'  element={<Login/>}/>
-      
       <Route path='/login' element={<Login/>}/>
       <Route path='/signup' element={<Signup/>}/>
+      {/* <Route path="/pharmacy/:id" element={<SinglePharmacyPage />} /> */}
      </Route>
 
      <Route path='/' element={<DashLayout/>}>

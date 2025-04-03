@@ -9,6 +9,7 @@ import image56 from "../assets/pharmacy9.jpg";
 import image57 from "../assets/pharmacy10.jpg";
 import image58 from "../assets/Pharmacy11.jpg";
 import { useParams } from 'react-router-dom';
+import '../style/Singlepharmacy.css'
 
 const pharmacies = [
   { id: 1, name: "Victory Pharmacy", image: image50, openingHours: "Mon-Sat: 8:00 AM - 9:00 PM | Sun: 10:00 AM - 6:00 PM" },

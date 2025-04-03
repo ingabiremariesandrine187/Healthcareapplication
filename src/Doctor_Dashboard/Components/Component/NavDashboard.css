@@ -40,6 +40,7 @@
 /* Search Box */
 .search-box {
   position: relative;
+  height: 40px;
   display: flex;
   align-items: center;
   width: 250px;
@@ -51,6 +52,7 @@
 
 .search-box input {
   width: 100%;
+
   padding: 8px 15px;
   padding-right: 35px;
   border-radius: 20px;

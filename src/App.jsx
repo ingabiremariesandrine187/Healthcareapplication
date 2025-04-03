@@ -42,11 +42,11 @@ function App() {
       <Route path="/profile/" element={<Profile/>} />
       <Route path='/'  element={<Signup/>}/>
       <Route path='/'  element={<Login/>}/>
-      <Route path='/login' element={<Login/>}/>
+      
       <Route path='/signup' element={<Signup/>}/>
       <Route path="/pharmacy/:id" element={<SinglePharmacyPage />} /> 
      </Route>
-
+     <Route path='/login' element={<Login/>}/>
      <Route path='/' element={<DashLayout/>}>
      <Route path="/admin-login" element={<Logindash />} />
      <Route path='/Dashboard' index element={<Dashboard/>}/>

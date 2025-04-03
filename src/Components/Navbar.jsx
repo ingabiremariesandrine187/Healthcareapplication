@@ -4,6 +4,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { IoSearchOutline } from "react-icons/io5";
 import { FaRegCircleUser } from "react-icons/fa6";
 import Image2 from '../assets/Healthcare_picture.png';
+import { useNavigate } from "react-router-dom";
 import "../style/Navbar.css";
 
 function Navbar() {
@@ -12,6 +13,8 @@ function Navbar() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+  const navigate = useNavigate();
+
 
   return (
     <div className="navbar">
@@ -31,7 +34,7 @@ function Navbar() {
           <Link to="/faqs">FAQS</Link>
           <Link to="/blogs">Blogs</Link>
           <Link to="/about us">About us</Link>
-          <Link to="/login">admin</Link>
+          {/* <Link to="/login">admin</Link> */}
         </nav>
       </div>
       
@@ -44,8 +47,12 @@ function Navbar() {
           <IoSettingsOutline className="settings-icon" />
         </div>
         <div className="icon-btn">
-          <FaRegCircleUser className="user-icon" />
-        </div>
+      <FaRegCircleUser 
+        className="user-icon" 
+        onClick={() => navigate("/login")} 
+        style={{ cursor: "pointer", fontSize: "24px" }} 
+      />
+    </div>
       </div>
     </div>
   );

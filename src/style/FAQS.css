@@ -5,6 +5,12 @@
   background-color: white;
   flex-wrap: wrap; /* Ensures responsiveness on small screens */
 }
+.img30{
+  margin-top: 190px;
+  margin-right: 99px;
+}
+
+
 
 /* Styling for the container when the screen width is smaller */
 .faq-container {

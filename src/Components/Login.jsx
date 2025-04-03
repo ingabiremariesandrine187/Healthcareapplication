@@ -66,7 +66,8 @@ const Login = () => {
   };
 
   return (
-    <div className="login-container">
+    <div class="login-cont">
+         <div className="login-container">
       <h2>Login</h2>
       {successMessage && <p className="success-message">{successMessage}</p>}
       {errors.server && <p className="error-message">{errors.server}</p>}
@@ -89,6 +90,8 @@ const Login = () => {
         </button>
       </form>
     </div>
+    </div>
+ 
   );
 };
 

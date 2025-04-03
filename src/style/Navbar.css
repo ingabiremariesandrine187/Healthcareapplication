@@ -7,9 +7,10 @@
   position: fixed;
   background-color: white;
   z-index: 1000;
-  width: 91%;
+  width: 95%;
   margin: 0;
   top: 0;
+  margin:0px;
 }
 
 .logo-links {

@@ -1,9 +1,25 @@
+
+
+body{
+  background-image: url("../assets/background hospital.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+ /* .login-cont{
+  background-image: url("../assets/background hospital.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  height: 700px; 
+  height: 100vh; 
+  margin:0;
+  padding:0,
+}  */
+
+
+
 /* Login.css */
 .login-container {
-  background-size: cover; 
   background-position: center; 
-  background-repeat: no-repeat; 
-  background-image: url("../assets/background hospital.jpg");
     width: 400px;
     height: 500px;
     margin: 50px auto;
@@ -12,7 +28,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 150px;
   }
   
   h2 {
@@ -29,7 +45,7 @@
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    color: antiquewhite;
+    color: black;
     margin-left: 60px;
   }
   
